@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "types": ["bun-types"],
+
+    "lib":["esnext"],
+    "target": "esnext",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "moduleDetection": "force",
+
+
+    "skipLibCheck": true,
+    "baseUrl": "./",
+
+    "strict":true,
+    "allowUnreachableCode": false,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature":true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+  },
+  "watchOptions": {
+    "excludeDirectories":["**/node_modules"]
+  },
+  "include":["scripts/**/*","build.ts","server.ts"],
+}
