@@ -21,6 +21,7 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+    "noImplicitAny": false
   },
   "watchOptions": {
     "excludeDirectories":["**/node_modules"]

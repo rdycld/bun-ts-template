@@ -1,0 +1,41 @@
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.photo {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000055;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+}
+
+.highlight-img {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  width: 80vw;
+  height: 80vh;
+  object-fit: cover;
+  z-index: 9999;
+}
+
+.loader {
+  position: fixed;
+  left: 50vw;
+  top: 50vh;
+  z-index: 8888;
+}
+
+.hide {
+  display: none;
+}

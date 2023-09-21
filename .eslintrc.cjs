@@ -6,6 +6,7 @@ module.exports = {
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['prettier'],
   rules: {
+    '@typescript-eslint/no-explicit-any': ['off'],
     'prettier/prettier': [
       'warn',
       {
