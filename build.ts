@@ -5,5 +5,6 @@ export async function build() {
     loader: {
       '.ts': 'ts',
     },
+    minify: false,
   });
 }

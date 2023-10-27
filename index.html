@@ -7,15 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="styles/style.css" rel="stylesheet">
 </head>
+<style>
+  .card {
+    max-width: 400px;
+    min-height: 250px;
+    background: #02b875;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #FFF;
+    margin: 20px;
+    box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+  }
+</style>
 
 <body>
-  <div class="gallery">
-    <img class="photo" src="https://picsum.photos/1920/1080" />
-    <img class="photo" src="https://picsum.photos/1920/1081" />
-    <img class="photo" src="https://picsum.photos/1920/1082" />
-    <img class="photo" src="https://picsum.photos/4920/1083" />
+
+  <div class="card">
+    <h4>The ESP32 Update web page without refresh</h4><br>
+    <h1>Sensor Value:<span id="ADCValue">0</span></h1><br>
+    <br><a href="https://circuits4you.com">Circuits4you.com</a>
   </div>
-  <script type="module" src="./dist/index.js"></script>
-</body>
+
+  <body>
+    <script type="module" src="./esp32/index.js"></script>
+  </body>
 
 </html>

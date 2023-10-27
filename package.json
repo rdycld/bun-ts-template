@@ -1,8 +1,10 @@
 {
   "type": "module",
   "scripts": {
-    "clean": "rm -rf dist && echo 'Done.'",
-    "dev": "bun server.ts"
+    "clean": "rm -rf esp32 dist && echo 'Done.'",
+    "dev": "bun run --watch server.ts",
+    "build": "bun build --minify --outfile=dist/index.js ./scripts/index.ts",
+    "esp32": "bun run esp32.ts"
   },
   "devDependencies": {
     "bun-types": "^1.0.1",

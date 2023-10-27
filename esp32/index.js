@@ -1,0 +1,1 @@
+var n=function(){const d=new XMLHttpRequest;d.onreadystatechange=function(){if(this.readyState==4&&this.status==200)document.getElementById("ADCValue").innerHTML=this.responseText},d.open("GET","readADC",!0),d.send()};setInterval(function(){n()},2000);

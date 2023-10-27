@@ -3,6 +3,7 @@ import { build } from 'build';
 Bun.serve({
   port: 8080,
   async fetch(req) {
+    await build();
     const url = new URL(req.url);
     if (url.pathname === '/styles/style.css') {
       return new Response(
@@ -18,8 +19,6 @@ Bun.serve({
         }),
       );
     }
-
-    await build();
 
     return new Response(Bun.file('./index.html'));
   },
