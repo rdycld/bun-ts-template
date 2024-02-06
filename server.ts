@@ -24,3 +24,6 @@ Bun.serve({
     return new Response(Bun.file('./index.html'));
   },
 });
+
+console.log('listening on: http://localhost:8080');
+Bun.spawn(['open', 'http://localhost:8080']);
