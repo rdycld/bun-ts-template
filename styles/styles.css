@@ -3,3 +3,32 @@
    padding: 0;
    box-sizing: border-box;
  }
+
+
+
+
+ .bar-chart {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   background: #eeeeee;
+ }
+
+ .bar-container {
+   width: 100%;
+   height: 100%;
+
+   border-bottom: 1px solid red;
+   border-left: 1px solid red;
+
+   display: flex;
+   column-gap: 30px;
+ }
+
+
+ .bar-entry {
+   display:flex;
+   height: 100%;
+   align-items: flex-end;
+   column-gap: 10px;
+ }
